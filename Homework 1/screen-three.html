@@ -13,6 +13,13 @@
 
 
 <body>
+
+
+  <div class="topnav">
+    <p class="logo">Flutter</p>
+    <input class="footer-bar" placeholder="Search..." type="text">
+  </div>
+
   <div class="wrapper">
 
     <div class="account-container">
@@ -20,7 +27,7 @@
       <div class="avatar">
         <div class="photo">
           <figure>
-            <img src="avatar.jpg" alt="">
+            <img class="avatar-image" src="avatar.jpg" alt="">
             <figcaption>Martin Hristov</figure>
           </figure>  
         </div>
@@ -38,10 +45,59 @@
           </div>
         </div>
         
-        <button>Log Out</button>
+        <button class="login-button">Log Out</button>
       </div>
 
     </div>
+
+    <div class="tweet-container">
+
+      <div class="search-bar">
+        <img class="bar-image" src="avatar.jpg" alt="">
+        <input type="text" placeholder="Say something">
+      </div>
+
+
+      <div class="tweet">
+        <img  class="tweet-image" src="avatar.jpg" alt="">
+        <div class="tweet-content">
+          <div class="name">
+            <h3>Ivan Ivanov</h3>
+            <p class="ago">&middot 0 second ago</p>
+            <button class="delete">x</button>
+          </div>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consectetur maiores reiciendis molestias distinctio in, perferendis labore fugit nisi alias excepturi eligendi doloremque rerum magni eius corporis minima id officia.</p>
+          <div class="likes-dislikes">
+            <p class="likes">5</p>
+            <img class="like-button" src="like.jpg" alt="">
+            <p class="dislikes">3</p>
+            <img class="dislike-button" src="dislike.png" alt="">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="tweet">
+        <img  class="tweet-image" src="avatar.jpg" alt="">
+        <div class="tweet-content">
+          <div class="name">
+            <h3>Ivan Ivanov</h3>
+            <p class="ago">&middot 2 seconds ago</p>
+            <button class="delete">x</button>
+          </div>
+          <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos corrupti sequi nostrum ipsum maiores voluptatem laborum nam commodi nisi. Repudiandae consequatur culpa iure reiciendis voluptate quis exercitationem officia eveniet error?</p>
+          <div class="likes-dislikes">
+            <p class="likes">3</p>
+            <img class="like-button" src="like.jpg" alt="">
+            <p class="dislikes">0</p>
+            <img class="dislike-button" src="dislike.png" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
   </div>
 </body>
 
