@@ -24,13 +24,8 @@ body{
 @media screen and (max-width: 890px) { 
   
     .container { 
-        width: 70%;
-        margin-top: 30%; 
+        width: 70%; 
     } 
-
-    .button-submit{
-        min-width: 50%;
-    }
 } 
 
 
@@ -49,13 +44,13 @@ input{
 
 .button-submit{
     max-width: 10rem;
-    width: 30%;
-    height: 35px;
+    width: 25%;
+    height: 30px;
     align-self: flex-end;
     color: white;
-    background-color:#55bcd6;
+    background-color: #00a4ff;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .underline1, .underline2, .underline3 {

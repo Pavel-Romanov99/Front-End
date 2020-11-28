@@ -25,6 +25,7 @@ body{
   
     .container { 
         width: 70%; 
+        margin-top: 40%;
     } 
 } 
 
@@ -44,13 +45,13 @@ input{
 
 .button-submit{
     max-width: 10rem;
-    width: 25%;
-    height: 30px;
+    width: 30%;
+    height: 35px;
     align-self: flex-end;
     color: white;
-    background-color: #00a4ff;
+    background-color:#55bcd6;
     margin-top: 20px;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 .underline1, .underline2 {
@@ -90,4 +91,15 @@ h2{
     margin-bottom: 10%;
     color: #848694;
     font-weight: normal;
+}
+
+@media screen and (max-width: 890px){
+    .container{
+        margin-top: 20%;
+    }
+
+    
+    .button-submit{
+        min-width: 50%;
+    }
 }
