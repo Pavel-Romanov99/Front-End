@@ -21,17 +21,6 @@ body{
     border-radius: 8px;
 }
 
-@media screen and (max-width: 890px) { 
-  
-    .container { 
-        width: 70%;
-        margin-top: 30%; 
-    } 
-
-    .button-submit{
-        min-width: 50%;
-    }
-} 
 
 
 form{
@@ -100,3 +89,15 @@ h2{
     color: #848694;
     font-weight: normal;
 }
+
+@media screen and (max-width: 890px) { 
+  
+    .container { 
+        width: 70%;
+        margin-top: 30%; 
+    } 
+
+    .button-submit{
+        min-width: 50%;
+    }
+} 
