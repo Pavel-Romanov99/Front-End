@@ -152,12 +152,42 @@ img{
     margin-bottom: 5%;
     margin-left: 10%;
     margin-right: 10%;
+    display:flex;
+    flex-direction: row;
 }
 
 a{
     text-decoration: none;
     color: inherit
 }
+
+.cart-wrapper{
+    width: 30%;
+    margin-top: 50px;
+}
+
+.cart{
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.shopping-cart td, .shopping-cart th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .shopping-cart tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .shopping-cart tr:hover {background-color: #ddd;}
+  
+  .shopping-cart th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
 
   @media (min-width: 600px) {
     .cards { grid-template-columns: repeat(2, 1fr); }

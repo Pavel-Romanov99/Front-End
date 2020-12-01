@@ -15,3 +15,13 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+function test(){
+
+
+  let brand1 = document.getElementsByClassName('brand')[0].textContent;
+  let price1 = document.getElementsByClassName('price')[0].innerHTML;
+
+  localStorage.setItem('brands' , brand1);
+
+}
