@@ -233,6 +233,10 @@ a{
       margin-bottom: 10px;
   }
 
+  .price1, .price2, .price3, .price4, .price5, .price6{
+      color: crimson;
+  }
+
   input{
       width: 20%;
       height: 63%;
