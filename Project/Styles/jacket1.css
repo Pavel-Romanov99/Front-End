@@ -222,6 +222,10 @@ strong{
     padding-left: 7px;
 }
 
+.email{
+    height: 1.5rem;
+    width: 100%;
+}
 
 .return-wrapper{
     margin-top: 5%;
@@ -241,3 +245,13 @@ strong{
     outline: none;
 }
 
+.price{
+    font-weight: 600;
+    color: crimson;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit
+}

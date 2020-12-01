@@ -27,6 +27,11 @@ body{
     height: 3rem;
 }
 
+.email{
+    height: 1.5rem;
+    width: 100%;
+}
+
 .bottom-nav-bar{
     background-color: black;
     color: white;

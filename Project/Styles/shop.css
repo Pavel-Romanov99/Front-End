@@ -242,6 +242,11 @@ a{
       height: 63%;
   }
 
+  .email{
+      height: 1.5rem;
+      width: 100%;
+  }
+
   span{
       font-weight: 700;
   }
