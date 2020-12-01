@@ -31,7 +31,7 @@ body{
     margin-left: 70%;
 }
 
-.login, .register, .cart{
+.login, .register{
     margin-right: 10px;
     background-color: rgb(255, 255, 100);
     color: black;
@@ -40,7 +40,7 @@ body{
     border: none;
 }
 
-.login:hover, .register:hover, .cart:hover{
+.login:hover, .register:hover{
     background-color: black;
     color:white;
 }
@@ -101,8 +101,8 @@ body{
 .card {
     background-color: white;
     color: black;
-    width: 65%;
-    height: 95%;
+    width: 70%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,13 +117,13 @@ body{
   }
 
 img{
-    width: 100%;
+    width: 99.9%;
     height: 100%;
     margin-bottom: 10px;
   }
 
   .cards {
-    width: 100%;
+    width: 99%;
     margin: 0 auto;
     display: grid;
     justify-items: center;
@@ -134,7 +134,7 @@ img{
 
   .description{
       display:flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
   }
 
@@ -174,6 +174,7 @@ a{
 .shopping-cart td, .shopping-cart th {
     border: 1px solid #ddd;
     padding: 8px;
+
   }
   
   .shopping-cart tr:nth-child(even){background-color: #f2f2f2;}
@@ -184,10 +185,62 @@ a{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgb(255, 255, 100);
+    color: black;
   }
 
+  .delete{
+      height: 3rem;
+      width: 2rem;
+      outline: none;
+      border: none;
+      background-color: black;
+      color:white;
+      font-weight: 600;
+  }
+
+  .delete:hover{
+      color:black;
+      background-color: rgb(255, 255, 100);
+  }
+
+  .add-to-cart{
+      width: 100%;
+      height: 2rem;
+      outline: none;
+      border: none;
+      border-radius: 30px;
+      background-color: rgb(255, 255, 100);
+      color: black;
+      font-weight: 600;
+      margin-top: 10px;
+  }
+
+
+
+  .add-to-cart:hover{
+      background-color: black;
+      color:white;
+  }
+
+  .info-wrapper{
+      display: flex;
+      flex-direction: column;
+      align-content: space-between;
+  }
+
+  .clothing1, .clothing2, .clothing3, .clothing4, .clothing5, .clothing6{
+      margin-bottom: 10px;
+  }
+
+  input{
+      width: 20%;
+      height: 63%;
+  }
+
+  span{
+      font-weight: 700;
+  }
 
   @media (min-width: 600px) {
     .cards { grid-template-columns: repeat(2, 1fr); }

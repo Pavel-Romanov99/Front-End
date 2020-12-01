@@ -93,7 +93,7 @@ function hover1(element) {
       total += Number(price_data) * Number(quantity_data);
       console.log(total);
       document.getElementsByClassName("total")[0].innerHTML = "Total: " + total.toFixed(2) + " $";
-      document.getElementById(item).innerHTML += '<button onclick="deleItem('+"'"+item+"'"+')">x</button>';
+      document.getElementById(item).innerHTML += '<button class="delete" onclick="deleItem('+"'"+item+"'"+')">x</button>';
   }
 
 
