@@ -1,61 +1,60 @@
-function ReverseString(str) { 
-    return str.split('').reverse().join('') 
- }
-
-function multiDimentional(str){
-    let counter = 0;
-    for(var i = 0; i < str.length; i++){
-        if(str[i] == '['){
-            counter++;
-        }
-    }
-    if(counter > 1){
-        return true;
-    }
-    return false;
-}
-
 function processData(input) {
 
     var result = [];
     result = eval(input);
+    
+    var num_counter = 0;
+    var final = [];
 
-    let num_counter = 0;
-    let final = [];
+    if(result !== undefined){
 
     for(var i = 0; i < result.length; i++){
-
+        
+        //count the numbers 
         if(typeof result[i] === "number"){
             num_counter++;
         }
+        //if its a string reverse it 
         else if(typeof result[i] === "string"){
-            final.push(ReverseString(result[i]))
+            final.push(result[i].split('').reverse().join('') )
         }
-        else if(typeof result[i] === "object"){
-            let str = JSON.stringify(result[i]);
+        //if its an array
+        else if(Array.isArray(result[i])){
+                let isNested = !!(result.find(Array.isArray))
+                //if its a multidim arr
+                if(isNested){
+                    //flatten it
+                    final.push(result[i].flat(Infinity))
+                }
+                //if its a one-dimentional arr
+                //sort it
+                else final.push(result[i].sort())
 
-            if(str[0] == '['){                
-                if(multiDimentional(str)){
-                    final.push(result[i],flat())
-                }
-                else{
-                    final.push(result[i].sort())
-                }
             }
-            else if(str[0] === '{'){
+            //if its an json object
+        else if(typeof result[i] === "object"){
+            
+            let str = JSON.stringify(result[i]);
+            if(str && str[0] === '{'){
                 let sliced = str.slice(1, -1);
-                var test = sliced.replace(/"/g, ' ');
-                final.push(test)
+                var test = sliced.replace(/"/g, '');
+                var res = test.replace(":", ": ");
+                final.push(res)
             }
         }
+        //if its a function
         else if(typeof result[i] === "function"){
             final.push(result[i](42))
         }
     }
+}
     if(num_counter > 0){
         final.unshift(num_counter)
     }
-    console.log(final)
+    console.log(JSON.stringify(final))
 } 
 
-processData([1, "123456789", [1, 2, 5, 4], function(a) { return a; }, {"name": "Martin"}, 3, 4, 5, function(a) { return (a + 1)}]);
+processData([1.2, 3.2, "123456789",  [["4"], 2, [3, 4]], function(a) { return a; }, { name: "Martin" }, 3, 4, 5, function(a) { return (a + 1)}]);
+processData(["test", "world", "42", 1,2]);
+processData([1,2,3,4]);
+processData();
